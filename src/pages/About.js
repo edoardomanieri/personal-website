@@ -3,11 +3,9 @@ import FsLightbox from "fslightbox-react";
 import React, { useEffect, useState } from "react";
 import * as Icon from "react-feather";
 import ProgressiveImage from 'react-progressive-image';
-import Slider from "react-slick";
 import Layout from "../components/Layout";
 import Sectiontitle from "../components/Sectiontitle";
 import Service from "../components/Service";
-import Testimonial from "../components/Testimonial";
 
 
 function About() {
@@ -141,7 +139,7 @@ function About() {
       </div>
       <div className="mi-service-area mi-section mi-padding-top">
         <div className="container">
-          <Sectiontitle title="Services" />
+          <Sectiontitle title="Expertise" />
           <div className="mi-service-wrapper">
             <div className="row mt-30-reverse">
               {services.map((service) => (
@@ -152,20 +150,6 @@ function About() {
                   <Service content={service} />
                 </div>
               ))}
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="mi-review-area mi-section mi-padding-top mi-padding-bottom">
-        <div className="container">
-          <Sectiontitle title="Reviews" />
-          <div className="row justify-content-center">
-            <div className="col-12">
-              <Slider className="mi-testimonial-slider" {...sliderSettings}>
-                {reviews.map((review) => (
-                  <Testimonial key={review.id} content={review} />
-                ))}
-              </Slider>
             </div>
           </div>
         </div>
