@@ -11,6 +11,7 @@ function Resumes(){
   const [skills, setSkills] = useState([]);
   const [workingExperience, setWorkingExperience] = useState([]);
   const [educationExperience, setEducationExperience] = useState([]);
+  const [additionalExperience, setAdditionalExperience] = useState([]);
 
   useEffect(() =>{
     axios.get('/api/skills')
@@ -21,25 +22,12 @@ function Resumes(){
       .then(response =>{
         setWorkingExperience(response.data.workingExperience);
         setEducationExperience(response.data.educationExperience);
+        setAdditionalExperience(response.data.additionalExperience);
       })
   }, [])
 
   return (
     <Layout>
-      <div className="mi-skills-area mi-section mi-padding-top">
-        <div className="container">
-          <Sectiontitle title="My Skills" />
-          <div className="mi-skills">
-            <div className="row mt-30-reverse">
-              {skills.map(skill => (
-                <TrackVisibility once className="col-lg-6 mt-30" key={skill.title}>
-                  <Progress title={skill.title} percentage={skill.value} />
-                </TrackVisibility>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
       <div className="mi-resume-area mi-section mi-padding-top mi-padding-bottom">
         <div className="container">
           <Sectiontitle title="Resume" />
@@ -56,7 +44,29 @@ function Resumes(){
               <Resume key={educatonExp.id} resumeData={educatonExp}/>
             ))}
           </div>
+          <div className="mt-30"></div>
+          <Smalltitle title="Additional Experience" icon="library" />
+          <div className="mi-resume-wrapper">
+            {additionalExperience.map(additionalExp => (
+              <Resume key={additionalExp.id} resumeData={additionalExp}/>
+            ))}
+          </div>
         </div>
+      </div>
+      <div className="mi-skills-area mi-section mi-padding-top">
+        <div className="container">
+          <Sectiontitle title="My Skills" />
+          <div className="mi-skills">
+            <div className="row mt-30-reverse">
+              {skills.map(skill => (
+                <TrackVisibility once className="col-lg-6 mt-30" key={skill.title}>
+                  <Progress title={skill.title} percentage={skill.value} />
+                </TrackVisibility>
+              ))}
+            </div>
+          </div>
+        </div>
+        <br/>
       </div>
     </Layout>
   );

@@ -105,184 +105,43 @@ const database = {
   portfolios: [
     {
       id: 1,
-      title: "T-shirt Mockup",
-      subtitle: "A beautiful t-shirt mockup.",
-      imageUrl: "/images/portfolio-image-1.jpg",
-      largeImageUrl: ["/images/portfolio-image-1-lg.jpg"],
-      url: 'https://dribbble.com'
+      title: "BetterPass",
+      subtitle: "Password Manager WebApp",
+      imageUrl: "/images/safeapp.jpg",
+      largeImageUrl: ["/images/safeapp.jpg"],
+      url: 'https://betterpass.com'
     },
     {
       id: 2,
-      title: "Coffee Mug",
-      subtitle: "Awesome coffee mug design.",
-      imageUrl: "/images/portfolio-image-4.jpg",
-      largeImageUrl: [
-        "/images/portfolio-image-4-lg.jpg",
-        "/images/portfolio-image-4-lg2.jpg"
-      ],
-      url: 'https://facebook.com'
+      title: "Car Recognition App",
+      subtitle: "App able to predict make and model of European cars from images",
+      imageUrl: "/images/car.jpg",
+      largeImageUrl: ["/images/car.jpg"],
+      url: 'https://github.com/Edoardopericoli/car-recognition-app'
     },
     {
       id: 3,
-      title: "Tea & Coffee Mug",
-      subtitle: "Beautiful mug with logo.",
-      imageUrl: "/images/portfolio-image-2.jpg",
-      url: 'https://pinterest.com'
+      title: "Parliament Network",
+      subtitle: "Identify latent networks inside the italian parliament",
+      imageUrl: "/images/network.jpg",
+      largeImageUrl: ["/images/network.jpg"],
+      url: 'https://github.com/edoardomanieri/parliament-network'
     },
     {
       id: 4,
-      title: "Pen Holder",
-      subtitle: "A pen holder with beautiful design.",
-      imageUrl: "/images/portfolio-image-3.jpg",
-      largeImageUrl: ["/images/portfolio-image-3-lg.jpg"],
-      url: '#'
+      title: "Soccer Bet Bot",
+      subtitle: "Bot that provides live outcome predictions on football matches",
+      imageUrl: "/images/betbot.jpg",
+      largeImageUrl: ["/images/betbot.jpg"],
+      url: 'https://github.com/edoardomanieri/soccer-bet-bot'
     },
     {
       id: 5,
-      title: "Mug",
-      subtitle: "Mug with awesome style",
-      imageUrl: "/images/portfolio-image-5.jpg",
-      largeImageUrl: ["/images/portfolio-image-5-lg.jpg"]
-    },
-    {
-      id: 6,
-      title: "Pendrive",
-      subtitle: "Free pendrive mockup design.",
-      imageUrl: "/images/portfolio-image-6.jpg",
-      largeImageUrl: ["/images/portfolio-image-6-lg.jpg"]
-    },
-    {
-      id: 7,
-      title: "Beautiful Pendrive",
-      subtitle: "Pendrive with great design & flexible.",
-      imageUrl: "/images/portfolio-image-7.jpg",
-      largeImageUrl: ["/images/portfolio-image-7-lg.jpg"],
-      url: 'https://twitter.com'
-    },
-    {
-      id: 8,
-      title: "Sticker",
-      subtitle: "Clip sticker mockup design.",
-      imageUrl: "/images/portfolio-image-8.jpg",
-      largeImageUrl: ["/images/portfolio-image-8-lg.jpg"]
-    },
-    {
-      id: 9,
-      title: "Packet",
-      subtitle: "Beautiful packet & product design.",
-      imageUrl: "/images/portfolio-image-9.jpg",
-      largeImageUrl: ["/images/portfolio-image-9-lg.jpg"]
-    },
-    {
-      id: 10,
-      title: "Pen Holder",
-      subtitle: "A pen holder with beautiful design.",
-      imageUrl: "/images/portfolio-image-3.jpg",
-      largeImageUrl: ["/images/portfolio-image-3-lg.jpg"],
-      url: '#'
-    },
-    {
-      id: 11,
-      title: "Coffee Mug",
-      subtitle: "Awesome coffee mug design.",
-      imageUrl: "/images/portfolio-image-4.jpg",
-      largeImageUrl: [
-        "/images/portfolio-image-4-lg.jpg",
-        "/images/portfolio-image-4-lg2.jpg"
-      ],
-      url: 'https://facebook.com'
-    },
-    {
-      id: 12,
-      title: "Tea & Coffee Mug",
-      subtitle: "Beautiful mug with logo.",
-      imageUrl: "/images/portfolio-image-2.jpg",
-      url: 'https://pinterest.com'
-    },
-    {
-      id: 13,
-      title: "T-shirt Mockup",
-      subtitle: "A beautiful t-shirt mockup.",
-      imageUrl: "/images/portfolio-image-1.jpg",
-      largeImageUrl: ["/images/portfolio-image-1-lg.jpg"],
-      url: 'https://dribbble.com'
-    },
-    {
-      id: 14,
-      title: "Mug",
-      subtitle: "Mug with awesome style",
-      imageUrl: "/images/portfolio-image-5.jpg",
-      largeImageUrl: ["/images/portfolio-image-5-lg.jpg"]
-    },
-    {
-      id: 15,
-      title: "Pendrive",
-      subtitle: "Free pendrive mockup design.",
-      imageUrl: "/images/portfolio-image-6.jpg",
-      largeImageUrl: ["/images/portfolio-image-6-lg.jpg"]
-    },
-    {
-      id: 16,
-      title: "Beautiful Pendrive",
-      subtitle: "Pendrive with great design & flexible.",
-      imageUrl: "/images/portfolio-image-7.jpg",
-      largeImageUrl: ["/images/portfolio-image-7-lg.jpg"],
-      url: 'https://twitter.com'
-    },
-    {
-      id: 17,
-      title: "Sticker",
-      subtitle: "Clip sticker mockup design.",
-      imageUrl: "/images/portfolio-image-8.jpg",
-      largeImageUrl: ["/images/portfolio-image-8-lg.jpg"]
-    },
-    {
-      id: 18,
-      title: "Packet",
-      subtitle: "Beautiful packet & product design.",
-      imageUrl: "/images/portfolio-image-9.jpg",
-      largeImageUrl: ["/images/portfolio-image-9-lg.jpg"]
-    },
-    {
-      id: 19,
-      title: "T-shirt Mockup",
-      subtitle: "A beautiful t-shirt mockup.",
-      imageUrl: "/images/portfolio-image-1.jpg",
-      largeImageUrl: ["/images/portfolio-image-1-lg.jpg"],
-      url: 'https://dribbble.com'
-    },
-    {
-      id: 20,
-      title: "Coffee Mug",
-      subtitle: "Awesome coffee mug design.",
-      imageUrl: "/images/portfolio-image-4.jpg",
-      largeImageUrl: [
-        "/images/portfolio-image-4-lg.jpg",
-        "/images/portfolio-image-4-lg2.jpg"
-      ],
-      url: 'https://facebook.com'
-    },
-    {
-      id: 21,
-      title: "Tea & Coffee Mug",
-      subtitle: "Beautiful mug with logo.",
-      imageUrl: "/images/portfolio-image-2.jpg",
-      url: 'https://pinterest.com'
-    },
-    {
-      id: 22,
-      title: "Pen Holder",
-      subtitle: "A pen holder with beautiful design.",
-      imageUrl: "/images/portfolio-image-3.jpg",
-      largeImageUrl: ["/images/portfolio-image-3-lg.jpg"],
-      url: '#'
-    },
-    {
-      id: 23,
-      title: "Mug",
-      subtitle: "Mug with awesome style",
-      imageUrl: "/images/portfolio-image-5.jpg",
-      largeImageUrl: ["/images/portfolio-image-5-lg.jpg"]
+      title: "Reinforcement Learning Library",
+      subtitle: "Implementation fo some reinforcement learning algorithms",
+      imageUrl: "/images/robot.jpg",
+      largeImageUrl: ["/images/robot.jpg"],
+      url: 'https://github.com/edoardomanieri/reinforcement-learning-lib'
     }
   ],
   experience: {
@@ -292,58 +151,74 @@ const database = {
         year: "2020 - Present",
         position: "Data Engineer",
         company: "Lloyds Banking Group",
-        details: "Retrieving, processing and structuring data to improve the quality of the modeling phase. Implementing and maintaining the Hadoop data infrastructure for mortgage data using Spark, Python."
+        details: ["Retrieving, processing and structuring data to improve the quality of the modeling phase.", 
+        "Implementing and maintaining the Hadoop data infrastructure for mortgage data using Spark, Python."]
       },
       {
         id: 2,
         year: "2020 - 2020",
         position: "Software Engineer Intern",
         company: "Goldman Sachs International",
-        details: "Implemented a rule engine to automate event handling using Java, Spring and Kafka."
+        details: ["Implemented a rule engine to automate event handling using Java, Spring and Kafka."]
       },
       {
         id: 3,
         year: "2019 - 2020",
         position: "Machine Learning Engineer",
         company: "SmartFAB",
-        details: "Developed an AI-based software aimed at performing automate analytics for the manufacturing industry. Designed, implemented and evaluated machine learning pipelines in Python."
+        details: ["Developed an AI-based software aimed at performing automate analytics for the manufacturing industry.",
+         "Designed, implemented and evaluated machine learning pipelines in Python."]
       },
       {
         id: 4,
         year: "2019 - 2019",
         position: "Machine Learning Intern",
         company: "MindIT Solutions",
-        details: "Evaluated and implemented different Deep Reinforcement Learning algorithms such as A2C, A3C, DQN on OpenAI Gym environments using numpy, pandas, gym, Keras (Python). Implemented a Deep Reinforcement Learning model on a custom environment in order to optimize the work process of a manufacturing company."
+        details: ["Evaluated and implemented different Deep Reinforcement Learning algorithms such as A2C, A3C, DQN on OpenAI Gym environments using numpy, pandas, gym, Keras (Python).",  
+        "Implemented a Deep Reinforcement Learning model on a custom environment in order to optimize the work process of a manufacturing company."]
       },
       {
         id: 5,
         year: "2018 - 2018",
         position: "Database Analyst Intern",
         company: "AEA s.r.l., Loccioni Group",
-        details: "Evaluated a database migration from SQLServer to MongoDB by replicating the entire SQLServer database on a MongoDB instance and by developing a performance test software using C#, Java, SQL.Implemented a system that guarantees high performances on queries on the most recent period and that also allows long-term queries."
+        details: ["Evaluated a database migration from SQLServer to MongoDB by replicating the entire SQLServer database on a MongoDB instance and by developing a performance test software using C#, Java, SQL.",
+        "Implemented a system that guarantees high performances on queries on the most recent period and that also allows long-term queries."]
       }
     ],
     educationExperience: [
       {
         id: 1,
         year: "2018 - 2020",
-        graduation: "Master of Science",
-        university: "Bocconi University, GPA: 29.5/30",
-        details: "Selected as one of the five students from other Italian universities. ciao"
+        graduation: "MSc Data Science",
+        university: "Bocconi University, Grade: 110 cum laude/110",
+        details: ["Selected as one of the five students from other Italian universities.",
+         "Relevant coursework: Machine Learning I, Machine Learning II, Computer Programming and Database Systems, Statistics and Probability, Optimization",
+         "Thesis work: Bayesian Learning of Stochastic Block Structures in Network Data via Pitman-Yor Processes"]
       },
       {
         id: 2,
-        year: "2016 - 2018",
-        graduation: "Bachelor of Science",
-        university: "Abc University",
-        details: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro."
+        year: "2015 - 2018",
+        graduation: "BEng Computer Engineering",
+        university: "University of Bologna, Grade: 110 cum laude/110",
+        details: ["Merit Scholarship Winner, ranking in the top 30 engineering students (2017)",
+        "Relevant coursework: Programming I, Programming II, Operating Systems, Distributed Systems, Database Systems, System Administration, Mathematical Analisys I, Mathematical Analisys II"]
+      }
+    ],
+    additionalExperience: [
+      {
+        id: 1,
+        year: "2019 - Present",
+        graduation: "LeadTheFuture",
+        university: "Mentee",
+        details: ["Among the few Italian students selected to be mentees for LeadTheFuture, a leading mentorship non-profit organization for students in STEM. LeadTheFuture empowers top-performing students to achieve their goals by giving them one-on-one guidance from high-impact mentors coming from the world’s leading STEM innovation hubs such as Silicon Valley."]
       },
       {
-        id: 3,
-        year: "2015 - 2016",
-        graduation: "Higher Schoold Graduation",
-        university: "Abc College",
-        details: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro."
+        id: 2,
+        year: "2019 - 2020",
+        graduation: "Bocconi Students for Data Science",
+        university: "Co-Founder",
+        details: ["Student association aimed at building a community of people interested in Artificial Intelligence and Data Science."]
       }
     ]
   },

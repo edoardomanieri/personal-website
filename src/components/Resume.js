@@ -10,7 +10,11 @@ function Resume(props) {
       <div className="mi-resume-details">
         <h5>{position || graduation}</h5>
         <h6 className="mi-resume-company">{company || university}</h6>
-        <p>{details}</p>
+        {details.map(detail => (
+          <ul>
+            <li>{detail}</li>
+          </ul>
+        ))}
       </div>
     </div>
   );
