@@ -33,7 +33,7 @@ function Contact(){
       setMessage('Message is required');
     } else{
       setError(false);
-      setMessage('You message has been sent!!!');
+      setMessage('You message has been sent');
     }
   }
   const handleChange = (event) => {
@@ -109,19 +109,6 @@ function Contact(){
             </div>
             <div className="col-lg-6">
               <div className="mi-contact-info">
-                {!phoneNumbers ? null : (
-                  <div className="mi-contact-infoblock">
-                    <span className="mi-contact-infoblock-icon">
-                      <Icon.Phone/>
-                    </span>
-                    <div className="mi-contact-infoblock-content">
-                      <h6>Phone</h6>
-                      {phoneNumbers.map(phoneNumber =>(
-                        <p key={phoneNumber}><a href={numberFormatter(phoneNumber)}>{phoneNumber}</a></p>
-                      ))}
-                    </div>
-                  </div>
-                )}
                 {!emailAddress ? null : (
                   <div className="mi-contact-infoblock">
                     <span className="mi-contact-infoblock-icon">
@@ -135,7 +122,7 @@ function Contact(){
                     </div>
                   </div>
                 )}
-                {!phoneNumbers ? null : (
+                {!address ? null : (
                   <div className="mi-contact-infoblock">
                     <span className="mi-contact-infoblock-icon">
                       <Icon.MapPin/>
