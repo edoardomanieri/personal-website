@@ -2,23 +2,23 @@ import Mock from "../mock";
 
 const database = {
   information: {
-    name: 'Devid Chester',
-    aboutContent: "I am a frontend web developer. I can provide clean code and pixel perfect design. I also make website more & more interactive with web animations.",
+    name: 'Edoardo Manieri',
+    aboutContent: "I am a Data Engineer with expertise in Machine Learning and Software Engineering",
     age: 24,
     phone: '',
-    nationality: 'American',
-    language: 'English, French',
-    email: '',
-    address: '121 King Street, Melbourne, Australia',
-    freelanceStatus: 'Available',
+    nationality: 'Italian',
+    language: 'English, Italian',
+    email: 'edoardomanieri@gmail.com',
+    address: 'London, UK',
+    freelanceStatus: '',
     socialLinks: {
-      facebook: 'https://facebook.com',
-      twitter: 'https://twitter.com',
+      facebook: '',
+      twitter: '',
       pinterest: '',
       behance: '',
-      linkedin: '',
+      linkedin: 'https://www.linkedin.com/in/edoardomanieri/',
       dribbble: '',
-      github: 'https://github.com'
+      github: 'https://github.com/edoardomanieri'
     },
     brandImage: '/images/brand-image.jpg',
     aboutImage: '/images/about-image.jpg',
@@ -27,19 +27,19 @@ const database = {
   },
   services: [
     {
-      title: "Web Design",
-      icon: 'color-pallet',
-      details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod."
+      title: "Software Engineering",
+      icon: 'stackoverflow',
+      details: "Experience in different Software Engineer roles and side-projects. Proficient in Python, Java and software engineering related tools like Git and Jenkins."
     },
     {
-      title: "Web Development",
-      icon: 'code',
-      details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod."
+      title: "Data Engineering",
+      icon: 'database',
+      details: "Currently employed as a Data Engineer, working with technologies like Python, SQL, Spark, Hadoop, Hive, Hbase, HDFS."
     },
     {
-      title: "Mobile Application",
-      icon: 'mobile',
-      details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod."
+      title: "Machine Learning",
+      icon: 'library',
+      details: "Master's in Data Science and passionate about Machine Learning. Working experience in different roles using Python and its data science library stack: pandas, numpy, sklearn, scipy, matplotlib, Keras"
     }
   ],
   reviews: [
@@ -281,33 +281,47 @@ const database = {
     workingExperience: [
       {
         id: 1,
-        year: "2018 - Present",
-        position: "Frontend Web Developer",
-        company: "Abc Company",
-        details: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro."
+        year: "2020 - Present",
+        position: "Data Engineer",
+        company: "Lloyds Banking Group",
+        details: "Retrieving, processing and structuring data to improve the quality of the modeling phase. Implementing and maintaining the Hadoop data infrastructure for mortgage data using Spark, Python."
       },
       {
         id: 2,
-        year: "2016 - 2018",
-        position: "Frontend Web Developer",
-        company: "CBA Company",
-        details: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro."
+        year: "2020 - 2020",
+        position: "Software Engineer Intern",
+        company: "Goldman Sachs International",
+        details: "Implemented a rule engine to automate event handling using Java, Spring and Kafka."
       },
       {
         id: 3,
-        year: "2014 - 1016",
-        position: "UI/UX Designer",
-        company: "Example Company",
-        details: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro."
+        year: "2019 - 2020",
+        position: "Machine Learning Engineer",
+        company: "SmartFAB",
+        details: "Developed an AI-based software aimed at performing automate analytics for the manufacturing industry. Designed, implemented and evaluated machine learning pipelines in Python."
+      },
+      {
+        id: 4,
+        year: "2019 - 2019",
+        position: "Machine Learning Intern",
+        company: "MindIT Solutions",
+        details: "Evaluated and implemented different Deep Reinforcement Learning algorithms such as A2C, A3C, DQN on OpenAI Gym environments using numpy, pandas, gym, Keras (Python). Implemented a Deep Reinforcement Learning model on a custom environment in order to optimize the work process of a manufacturing company."
+      },
+      {
+        id: 5,
+        year: "2018 - 2018",
+        position: "Database Analyst Intern",
+        company: "AEA s.r.l., Loccioni Group",
+        details: "Evaluated a database migration from SQLServer to MongoDB by replicating the entire SQLServer database on a MongoDB instance and by developing a performance test software using C#, Java, SQL.Implemented a system that guarantees high performances on queries on the most recent period and that also allows long-term queries."
       }
     ],
     educationExperience: [
       {
         id: 1,
-        year: "2018 - 2019",
+        year: "2018 - 2020",
         graduation: "Master of Science",
-        university: "Abc University",
-        details: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro."
+        university: "Bocconi University, GPA: 29.5/30",
+        details: "Selected as one of the five students from other Italian universities. ciao"
       },
       {
         id: 2,
