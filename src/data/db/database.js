@@ -21,8 +21,8 @@ const database = {
       github: 'https://github.com/edoardomanieri'
     },
     brandImage: '/images/brand-image.jpg',
-    aboutImage: '/images/about-image.jpg',
-    aboutImageLg: '/images/about-image-lg.jpg',
+    aboutImage: '/images/foto.png',
+    aboutImageLg: '/images/foto.png',
     cvfile: '/files/empty.pdf'
   },
   services: [
@@ -70,27 +70,35 @@ const database = {
   ],
   skills: [
     {
-      title: "HTML5",
+      title: "Python",
       value: 95
     },
     {
-      title: "CSS3",
+      title: "Java",
       value: 90
     },
     {
-      title: "Javascript",
+      title: "SQL",
       value: 70
     },
     {
-      title: "jQuery",
+      title: "C",
       value: 85
     },
     {
-      title: "ReactJS",
+      title: "Bash",
       value: 80
     },
     {
-      title: "Photoshop",
+      title: "Google Cloud Platform",
+      value: 65
+    },
+    {
+      title: "Hadoop Ecosystem",
+      value: 65
+    },
+    {
+      title: "HTML, CSS, Javascript",
       value: 65
     }
   ],
