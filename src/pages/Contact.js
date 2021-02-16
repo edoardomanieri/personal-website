@@ -3,26 +3,27 @@ import axios from 'axios';
 import * as Icon from "react-feather";
 import Sectiontitle from "../components/Sectiontitle";
 import Layout from "../components/Layout";
+import emailjs from 'emailjs-com';
 
 function Contact(){
   const [phoneNumbers, setPhoneNumbers] = useState([]);
   const [emailAddress, setEmailAddress] = useState([]);
   const [address, setAddress] = useState([]);
   const [formdata, setFormdata] = useState({
-    name: "",
-    email: "",
+    from_name: "",
+    reply_to: "",
     subject: "",
     message: ""
   });
   const [error, setError] = useState(false);
   const [message, setMessage] = useState("");
 
-  const submitHandler = (event) =>{
+  function submitHandler(event) {
     event.preventDefault();
-    if( !formdata.name ){
+    if( !formdata.from_name ){
       setError(true);
       setMessage('Name is required');
-    } else if( !formdata.email ){
+    } else if( !formdata.reply_to ){
       setError(true);
       setMessage('Email is required');
     } else if( !formdata.subject ){
@@ -33,7 +34,14 @@ function Contact(){
       setMessage('Message is required');
     } else{
       setError(false);
-      setMessage('You message has been sent');
+      
+      emailjs.sendForm('service_msqcf5t', 'template_ob5m041', event.target, 'user_kc2jdUUorZEXKQ39GeHIw')
+      .then((result) => {
+          setMessage('Your message has been sent');
+      }, (error) => {
+        setMessage(error.text);
+      });
+
     }
   }
   const handleChange = (event) => {
@@ -83,14 +91,14 @@ function Contact(){
             <div className="col-lg-6">
               <div className="mi-contact-formwrapper">
                 <h4>Get In Touch</h4>
-                <form action="#" className="mi-form mi-contact-form" onSubmit={submitHandler}>
+                <form className="mi-form mi-contact-form" onSubmit={submitHandler}>
                   <div className="mi-form-field">
                     <label htmlFor="contact-form-name">Enter your name*</label>
-                    <input onChange={handleChange} type="text" name="name" id="contact-form-name" value={formdata.name}/>
+                    <input onChange={handleChange} type="text" name="from_name" id="contact-form-name" value={formdata.from_name}/>
                   </div>
                   <div className="mi-form-field">
                     <label htmlFor="contact-form-email">Enter your email*</label>
-                    <input onChange={handleChange} type="text" name="email" id="contact-form-email" value={formdata.email}/>
+                    <input onChange={handleChange} type="text" name="reply_to" id="contact-form-email" value={formdata.reply_to}/>
                   </div>
                   <div className="mi-form-field">
                     <label htmlFor="contact-form-subject">Enter your subject*</label>
@@ -101,7 +109,7 @@ function Contact(){
                     <textarea onChange={handleChange} name="message" id="contact-form-message" cols="30" rows="6" value={formdata.message}></textarea>
                   </div>
                   <div className="mi-form-field">
-                    <button className="mi-button" type="submit">Send Mail</button>
+                    <button className="mi-button" type="submit" >Send Mail</button>
                   </div>
                 </form>
                 {handleAlerts()}
