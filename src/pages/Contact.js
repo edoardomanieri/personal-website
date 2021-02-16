@@ -4,6 +4,7 @@ import * as Icon from "react-feather";
 import Sectiontitle from "../components/Sectiontitle";
 import Layout from "../components/Layout";
 import emailjs from 'emailjs-com';
+import keys from '../keys.json';
 
 function Contact(){
   const [phoneNumbers, setPhoneNumbers] = useState([]);
@@ -35,11 +36,11 @@ function Contact(){
     } else{
       setError(false);
       
-      emailjs.sendForm('service_msqcf5t', 'template_ob5m041', event.target, 'user_kc2jdUUorZEXKQ39GeHIw')
+      emailjs.sendForm(keys['serviceId'], keys['templateId'], event.target, keys['userId'])
       .then((result) => {
           setMessage('Your message has been sent');
       }, (error) => {
-        setMessage(error.text);
+        setMessage('Error verified: please send an email directly to edoardomanieri@gmail.com');
       });
 
     }
