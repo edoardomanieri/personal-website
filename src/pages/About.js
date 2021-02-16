@@ -83,7 +83,7 @@ function About() {
                   I am <span className="color-theme">{information.name}</span>
                 </h3>
                 <p>
-                I am a Data Engineer with expertise in Machine Learning and Software Engineering
+                {information.aboutContent}
                 </p>
                 <ul>
                   {!information.name ? null : (
@@ -121,9 +121,9 @@ function About() {
                       <b>Address</b> {information.address}
                     </li>
                   )}
-                  {!information.freelanceStatus ? null : (
+                  {!information.hobbies ? null : (
                     <li>
-                      <b>Freelance</b> {information.freelanceStatus}
+                      <b>Hobbies</b> {information.hobbies}
                     </li>
                   )}
                 </ul>

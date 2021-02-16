@@ -1,5 +1,4 @@
 {
-  "homepage": "http://edoardomanieri.github.io/personal-website",
   "name": "tf-react-chester",
   "version": "3.0.0",
   "dependencies": {
@@ -25,8 +24,6 @@
     "slick-carousel": "^1.8.1"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

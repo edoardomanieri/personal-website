@@ -3,13 +3,14 @@ import Mock from "../mock";
 const database = {
   information: {
     name: 'Edoardo Manieri',
-    aboutContent: "I am a Data Engineer with expertise in Machine Learning and Software Engineering",
+    aboutContent: "I am a Software Engineer with expertise in Data Engineering and in Machine Learning",
     age: 24,
     phone: '',
     nationality: 'Italian',
     language: 'English, Italian',
     email: 'edoardomanieri@gmail.com',
     address: 'London, UK',
+    hobbies: 'Football, Calisthenics, Programming, Hiking',
     freelanceStatus: '',
     socialLinks: {
       facebook: '',
@@ -21,9 +22,9 @@ const database = {
       github: 'https://github.com/edoardomanieri'
     },
     brandImage: '/images/brand-image.jpg',
-    aboutImage: '/images/foto.png',
-    aboutImageLg: '/images/foto.png',
-    cvfile: '/files/empty.pdf'
+    aboutImage: '/images/foto.jpeg',
+    aboutImageLg: '/images/foto.jpeg',
+    cvfile: '/files/Edoardo_Manieri_Resume.pdf'
   },
   services: [
     {
@@ -109,7 +110,7 @@ const database = {
       subtitle: "Password Manager WebApp",
       imageUrl: "/images/safeapp.jpg",
       largeImageUrl: ["/images/safeapp.jpg"],
-      url: 'https://betterpass.com'
+      url: 'https://betterpass.me'
     },
     {
       id: 2,
