@@ -169,7 +169,9 @@ const database = {
         position: "Backend Engineer",
         company: "iwoca",
         details: [
-          "Implementing and mantaining external API to allow partners to integrate our services.",
+          "Implementing and mantaining the internal facing API to iwoca website.",
+          "Implementing and mantaining external API to allow partners to integrate with our services.",
+          "implementing webhook framework in order to send information to partners.",
           "Tech stack: Python (Django), Postgres.",
         ],
       },
