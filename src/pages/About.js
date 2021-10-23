@@ -2,11 +2,10 @@ import axios from "axios";
 import FsLightbox from "fslightbox-react";
 import React, { useEffect, useState } from "react";
 import * as Icon from "react-feather";
-import ProgressiveImage from 'react-progressive-image';
+import ProgressiveImage from "react-progressive-image";
 import Layout from "../components/Layout";
 import Sectiontitle from "../components/Sectiontitle";
 import Service from "../components/Service";
-
 
 function About() {
   const [toggler, setToggler] = useState(false);
@@ -66,7 +65,13 @@ function About() {
                   src={information.aboutImage}
                   placeholder="/images/about-image-placeholder.png"
                 >
-                  {src => <img src={src} alt="aboutimage" onClick={() => handleToggler(!toggler)} />}
+                  {(src) => (
+                    <img
+                      src={src}
+                      alt="aboutimage"
+                      onClick={() => handleToggler(!toggler)}
+                    />
+                  )}
                 </ProgressiveImage>
                 <span className="mi-about-image-icon">
                   <Icon.ZoomIn />
@@ -82,9 +87,7 @@ function About() {
                 <h3>
                   I am <span className="color-theme">{information.name}</span>
                 </h3>
-                <p>
-                {information.aboutContent}
-                </p>
+                <p>{information.aboutContent}</p>
                 <ul>
                   {!information.name ? null : (
                     <li>

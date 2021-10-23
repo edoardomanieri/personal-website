@@ -172,7 +172,7 @@ const database = {
           "Implementing and mantaining the internal facing API to iwoca website.",
           "Implementing and mantaining external API to allow partners to integrate with our services.",
           "implementing webhook framework in order to send information to partners.",
-          "Tech stack: Python (Django), Postgres.",
+          "Tech stack: Python (Django), Postgres, AWS.",
         ],
       },
       {
