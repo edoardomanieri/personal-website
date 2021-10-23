@@ -4,7 +4,7 @@ const database = {
   information: {
     name: "Edoardo Manieri",
     aboutContent:
-      " I am a passionate Software Engineer with experience in Python and Java",
+      " I am a Software Engineer with experience in Python and Java",
     age: 25,
     phone: "",
     nationality: "Italian",
