@@ -5,13 +5,13 @@ const database = {
     name: "Edoardo Manieri",
     aboutContent:
       " I am a Software Engineer with experience in Python and Java",
-    age: 25,
+    age: 27,
     phone: "",
     nationality: "Italian",
     language: "English, Italian",
     email: "edoardomanieri@gmail.com",
-    address: "London, UK",
-    hobbies: "Football, Calisthenics, Programming",
+    address: "Senigallia, IT",
+    hobbies: "Football, Gym, Padel, Skiing, Reading",
     freelanceStatus: "",
     socialLinks: {
       facebook: "",
@@ -90,7 +90,7 @@ const database = {
     },
     {
       title: "Java",
-      value: 90,
+      value: 80,
     },
     {
       title: "SQL",
@@ -109,7 +109,7 @@ const database = {
       value: 65,
     },
     {
-      title: "Hadoop Ecosystem",
+      title: "AWS",
       value: 65,
     },
     {
@@ -165,18 +165,29 @@ const database = {
     workingExperience: [
       {
         id: 1,
-        year: "2021 - Present",
+        year: "2022 - Present",
+        position: "Backend Engineer",
+        company: "Plentific",
+        details: [
+          "Part of a cross-functional team; designing and implementing new features for the core part of the platform.",
+          "Improved database transaction management operations, reducing data inconsistencies monthly bugs by around 90%.",
+          "Tech stack: Python, Django, Django-rest-framework, Celery, Postgres, SQL, Grafana, AWS, Docker.",
+        ],
+      },
+      {
+        id: 2,
+        year: "2021 - 2022",
         position: "Backend Engineer",
         company: "iwoca",
         details: [
           "Implementing and mantaining the internal facing API to iwoca website.",
           "Implementing and mantaining external API to allow partners to integrate with our services.",
           "implementing webhook framework in order to send information to partners.",
-          "Tech stack: Python (Django), Postgres, AWS.",
+          "Tech stack: Python, Django, Postgres, AWS.",
         ],
       },
       {
-        id: 2,
+        id: 3,
         year: "2020 - 2021",
         position: "Data Engineer",
         company: "Lloyds Banking Group",
@@ -186,7 +197,7 @@ const database = {
         ],
       },
       {
-        id: 3,
+        id: 4,
         year: "2020 - 2020",
         position: "Software Engineer Intern",
         company: "Goldman Sachs International",
@@ -195,7 +206,7 @@ const database = {
         ],
       },
       {
-        id: 4,
+        id: 5,
         year: "2019 - 2020",
         position: "Machine Learning Engineer",
         company: "SmartFAB",
@@ -205,7 +216,7 @@ const database = {
         ],
       },
       {
-        id: 5,
+        id: 6,
         year: "2019 - 2019",
         position: "Machine Learning Intern",
         company: "MindIT Solutions",
@@ -215,7 +226,7 @@ const database = {
         ],
       },
       {
-        id: 6,
+        id: 7,
         year: "2018 - 2018",
         position: "Database Analyst Intern",
         company: "AEA s.r.l., Loccioni Group",
