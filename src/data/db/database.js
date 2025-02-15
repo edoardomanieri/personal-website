@@ -4,14 +4,14 @@ const database = {
   information: {
     name: "Edoardo Manieri",
     aboutContent:
-      " I am a Software Engineer with experience in Python and Java",
-    age: 27,
+      "Senior Software Engineer",
+    age: 28,
     phone: "",
     nationality: "Italian",
     language: "English, Italian",
     email: "edoardomanieri@gmail.com",
-    address: "Senigallia, IT",
-    hobbies: "Football, Gym, Padel, Skiing, Reading",
+    address: "Italy",
+    hobbies: "Football, Volley, Gym, Skiing, Reading",
     freelanceStatus: "",
     socialLinks: {
       facebook: "",
@@ -32,7 +32,7 @@ const database = {
       title: "Software Engineering",
       icon: "stackoverflow",
       details:
-        "Experience in different Software Engineer roles and side-projects. Proficient in Python, Javascript and Java, currently employed as a Backend Engineer (Django)",
+        "Experience in different Software Engineer roles and side-projects. Proficient in Python, Javascript and Java, currently employed as a Senior Software Engineer (Python - Django)",
     },
     {
       title: "Data Engineering",
@@ -166,11 +166,12 @@ const database = {
       {
         id: 1,
         year: "2022 - Present",
-        position: "Backend Engineer",
+        position: "Senior Sofware Engineer",
         company: "Plentific",
         details: [
           "Part of a cross-functional team; designing and implementing new features for the core part of the platform.",
-          "Improved database transaction management operations, reducing data inconsistencies monthly bugs by around 90%.",
+          "Implemented secure and user-friendly authentication features, including OTP verification and magiclinks. Improved platform login success rate by 15% and enhanced account security for 10K users.",
+          "Improved database transaction management operations, reducing data inconsistencies monthly issues by around 80%.",
           "Tech stack: Python, Django, Django-rest-framework, Celery, Postgres, SQL, Grafana, AWS, Docker.",
         ],
       },
