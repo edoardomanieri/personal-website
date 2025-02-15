@@ -4,7 +4,7 @@ import * as Icon from "react-feather";
 import Sectiontitle from "../components/Sectiontitle";
 import Layout from "../components/Layout";
 import emailjs from 'emailjs-com';
-import keys from '../keys.json';
+import fake from '../fake.json';
 
 function Contact(){
   const [phoneNumbers, setPhoneNumbers] = useState([]);
@@ -36,7 +36,7 @@ function Contact(){
     } else{
       setError(false);
       
-      emailjs.sendForm(keys['serviceId'], keys['templateId'], event.target, keys['userId'])
+      emailjs.sendForm(fake['serviceId'], fake['templateId'], event.target, fake['userId'])
       .then((result) => {
           setMessage('Your message has been sent');
       }, (error) => {
