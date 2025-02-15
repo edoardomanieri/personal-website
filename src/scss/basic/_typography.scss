@@ -56,7 +56,9 @@ img {
     max-width: 100%;
 }
 
-@include placeholder-color($color-body);
+input {
+    @include placeholder-color(gray);
+}
 
 h1,
 h2,
