@@ -3,9 +3,8 @@ import Mock from "../mock";
 const database = {
   information: {
     name: "Edoardo Manieri",
-    aboutContent:
-      "Senior Software Engineer",
-    age: 28,
+    aboutContent: "Senior Software Engineer",
+    age: 29,
     phone: "",
     nationality: "Italian",
     language: "English, Italian",
@@ -155,7 +154,7 @@ const database = {
     {
       id: 5,
       title: "Reinforcement Learning Library",
-      subtitle: "Implementation fo some reinforcement learning algorithms",
+      subtitle: "Implementation of some reinforcement learning algorithms",
       imageUrl: "/images/robot.jpg",
       largeImageUrl: ["/images/robot.jpg"],
       url: "https://github.com/edoardomanieri/reinforcement-learning-lib",
